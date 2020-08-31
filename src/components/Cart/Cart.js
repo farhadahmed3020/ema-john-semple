@@ -24,14 +24,27 @@ const Cart = (props) => {
      
 
     return (
-        <div>
-           <h4>Order Summary</h4> 
+        // <div className="card bg-light ">
+        //    <h4 className="text-danger">Order Summary</h4> 
+        //    <p>Items Ordered:{cart.length} </p>
+        //    <p> Product Price:{formatNumber(total)}</p>
+        //    <p><small> Shipping Cost:{formatNumber(shipping)}</small></p>
+        //    <p><small>Tax + VAT : {formatNumber(tax)}</small></p>
+        //    <p>Total Price :{formatNumber(grandTotal)}</p>
+        //    <button type="button" class="btn btn-outline-danger">Shopping Now</button>
+           
+        // </div>
+        <div class="card">
+        <h4 class="card-header">Order Summary</h4>
+        <div class="card-body">
            <p>Items Ordered:{cart.length} </p>
            <p> Product Price:{formatNumber(total)}</p>
            <p><small> Shipping Cost:{formatNumber(shipping)}</small></p>
-    <p><small>Tax + VAT : {formatNumber(tax)}</small></p>
+           <p><small>Tax + VAT : {formatNumber(tax)}</small></p>
            <p>Total Price :{formatNumber(grandTotal)}</p>
+           <a href="#"  className="btn btn-danger">Shopping Now</a>
         </div>
+      </div>
     );
 };
 
